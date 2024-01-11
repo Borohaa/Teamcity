@@ -18,7 +18,7 @@ public class TestData {
 
     public void delete(){
         var spec = Specifications.getSpec().authSpec(user);
-        new UncheckedProject(spec).delete(project.getId());
+        new UncheckedProject(spec).delete(project.getName());
         new UncheckedUser(spec).delete(user.getUsername());
     }
 }
